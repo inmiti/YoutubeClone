@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FAAF6062B62D7A700A5D74C /* PlayListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAF6052B62D7A700A5D74C /* PlayListModel.swift */; };
 		1FF36F1E2B6024B0004A879A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36F1D2B6024B0004A879A /* AppDelegate.swift */; };
 		1FF36F202B6024B0004A879A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36F1F2B6024B0004A879A /* SceneDelegate.swift */; };
 		1FF36F222B6024B0004A879A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36F212B6024B0004A879A /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FAAF6052B62D7A700A5D74C /* PlayListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListModel.swift; sourceTree = "<group>"; };
 		1FF36F1A2B6024B0004A879A /* YoutubeClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubeClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FF36F1D2B6024B0004A879A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FF36F1F2B6024B0004A879A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FAAF6042B62D76E00A5D74C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1FAAF6052B62D7A700A5D74C /* PlayListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1FF36F112B6024B0004A879A = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		1FF36F1C2B6024B0004A879A /* YoutubeClone */ = {
 			isa = PBXGroup;
 			children = (
+				1FAAF6042B62D76E00A5D74C /* Model */,
 				1FF36F1D2B6024B0004A879A /* AppDelegate.swift */,
 				1FF36F1F2B6024B0004A879A /* SceneDelegate.swift */,
 				1FF36F212B6024B0004A879A /* ViewController.swift */,
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FF36F222B6024B0004A879A /* ViewController.swift in Sources */,
+				1FAAF6062B62D7A700A5D74C /* PlayListModel.swift in Sources */,
 				1FF36F1E2B6024B0004A879A /* AppDelegate.swift in Sources */,
 				1FF36F202B6024B0004A879A /* SceneDelegate.swift in Sources */,
 			);

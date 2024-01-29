@@ -7,9 +7,17 @@
 
 import UIKit
 
+protocol RootPageProtocol: AnyObject{
+    func currentPage(_ index: Int)
+}
+
 class RootPageViewController: UIPageViewController {
      
     var subViewControllers = [UIViewController]()
+    var currentIndex: Int = 0
+    
+    weak var delegateRoot: RootPageProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         delegate = self
@@ -26,6 +34,7 @@ class RootPageViewController: UIPageViewController {
             AboutViewController()
         ]
         
+        _ = subViewControllers.enumerated().map({$0.element.view.tag = $0.offset }) // Me da cada elemento de la lista con su indice. Se asigna a cada tag el offset que es un entero, su indice.
         setViewControllerFromIndex(index: 0, direction: .forward)
     }
     
@@ -55,5 +64,12 @@ extension RootPageViewController: UIPageViewControllerDelegate, UIPageViewContro
             return nil
         }
         return subViewControllers[index+1]
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        if let index = pageViewController.viewControllers?.first?.view.tag{
+            currentIndex = index
+            delegateRoot?.currentPage(index)
+        }
     }
 }

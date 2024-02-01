@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F954E9C2B6BABE6002C7C92 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F954E9B2B6BABE6002C7C92 /* RequestModel.swift */; };
+		1F954E9F2B6BAE21002C7C92 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F954E9E2B6BAE21002C7C92 /* Constants.swift */; };
 		1FAAF6062B62D7A700A5D74C /* PlayListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAF6052B62D7A700A5D74C /* PlayListModel.swift */; };
 		1FDF25112B63BA25003E4F61 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDF25102B63BA25003E4F61 /* VideoModel.swift */; };
 		1FDF25132B63CD6F003E4F61 /* ChannelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDF25122B63CD6F003E4F61 /* ChannelModel.swift */; };
@@ -23,6 +25,8 @@
 		1FDF252F2B63D4CF003E4F61 /* ChannelsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FDF252D2B63D4CF003E4F61 /* ChannelsViewController.xib */; };
 		1FDF25322B63D4E1003E4F61 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDF25302B63D4E1003E4F61 /* AboutViewController.swift */; };
 		1FDF25332B63D4E1003E4F61 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FDF25312B63D4E1003E4F61 /* AboutViewController.xib */; };
+		1FDFFE002B6972280015FC47 /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDFFDFF2B6972280015FC47 /* ServiceLayer.swift */; };
+		1FDFFE022B69724B0015FC47 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDFFE012B69724B0015FC47 /* NetworkError.swift */; };
 		1FF36F1E2B6024B0004A879A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36F1D2B6024B0004A879A /* AppDelegate.swift */; };
 		1FF36F202B6024B0004A879A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36F1F2B6024B0004A879A /* SceneDelegate.swift */; };
 		1FF36F222B6024B0004A879A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF36F212B6024B0004A879A /* ViewController.swift */; };
@@ -32,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F954E9B2B6BABE6002C7C92 /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
+		1F954E9E2B6BAE21002C7C92 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1FAAF6052B62D7A700A5D74C /* PlayListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListModel.swift; sourceTree = "<group>"; };
 		1FDF25102B63BA25003E4F61 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		1FDF25122B63CD6F003E4F61 /* ChannelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelModel.swift; sourceTree = "<group>"; };
@@ -48,6 +54,8 @@
 		1FDF252D2B63D4CF003E4F61 /* ChannelsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelsViewController.xib; sourceTree = "<group>"; };
 		1FDF25302B63D4E1003E4F61 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		1FDF25312B63D4E1003E4F61 /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		1FDFFDFF2B6972280015FC47 /* ServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
+		1FDFFE012B69724B0015FC47 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		1FF36F1A2B6024B0004A879A /* YoutubeClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubeClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FF36F1D2B6024B0004A879A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FF36F1F2B6024B0004A879A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +77,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F954E9D2B6BAE04002C7C92 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1F954E9E2B6BAE21002C7C92 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		1FAAF6042B62D76E00A5D74C /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +150,16 @@
 			path = About;
 			sourceTree = "<group>";
 		};
+		1FDFFDFE2B695FB10015FC47 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				1FDFFDFF2B6972280015FC47 /* ServiceLayer.swift */,
+				1FDFFE012B69724B0015FC47 /* NetworkError.swift */,
+				1F954E9B2B6BABE6002C7C92 /* RequestModel.swift */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
 		1FF36F112B6024B0004A879A = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +179,8 @@
 		1FF36F1C2B6024B0004A879A /* YoutubeClone */ = {
 			isa = PBXGroup;
 			children = (
+				1F954E9D2B6BAE04002C7C92 /* Utils */,
+				1FDFFDFE2B695FB10015FC47 /* ServiceLayer */,
 				1FDF251F2B63D462003E4F61 /* About */,
 				1FDF251E2B63D459003E4F61 /* Channels */,
 				1FDF251D2B63D44B003E4F61 /* Playlists */,
@@ -248,19 +276,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FF36F222B6024B0004A879A /* ViewController.swift in Sources */,
+				1FDFFE022B69724B0015FC47 /* NetworkError.swift in Sources */,
 				1FDF25132B63CD6F003E4F61 /* ChannelModel.swift in Sources */,
 				1FDF25262B63D4A3003E4F61 /* VideosViewController.swift in Sources */,
 				1FAAF6062B62D7A700A5D74C /* PlayListModel.swift in Sources */,
 				1FDF252A2B63D4B6003E4F61 /* PlaylistsViewController.swift in Sources */,
+				1F954E9C2B6BABE6002C7C92 /* RequestModel.swift in Sources */,
 				1FF36F1E2B6024B0004A879A /* AppDelegate.swift in Sources */,
 				1FDF25112B63BA25003E4F61 /* VideoModel.swift in Sources */,
 				1FDF25222B63D48E003E4F61 /* HomeViewController.swift in Sources */,
 				1FF36F202B6024B0004A879A /* SceneDelegate.swift in Sources */,
 				1FDF251A2B63D2D4003E4F61 /* MainViewController.swift in Sources */,
+				1FDFFE002B6972280015FC47 /* ServiceLayer.swift in Sources */,
 				1FDF25322B63D4E1003E4F61 /* AboutViewController.swift in Sources */,
 				1FDF252E2B63D4CF003E4F61 /* ChannelsViewController.swift in Sources */,
 				1FDF25152B63D011003E4F61 /* PlaylistItemsModel.swift in Sources */,
 				1FDF25182B63D2AA003E4F61 /* RootPageViewController.swift in Sources */,
+				1F954E9F2B6BAE21002C7C92 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

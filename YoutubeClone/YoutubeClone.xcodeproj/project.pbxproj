@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F0794922B72B44F001E3877 /* HomeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0794912B72B44F001E3877 /* HomeProvider.swift */; };
 		1F954E9C2B6BABE6002C7C92 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F954E9B2B6BABE6002C7C92 /* RequestModel.swift */; };
 		1F954E9F2B6BAE21002C7C92 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F954E9E2B6BAE21002C7C92 /* Constants.swift */; };
 		1FAAF6062B62D7A700A5D74C /* PlayListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAF6052B62D7A700A5D74C /* PlayListModel.swift */; };
+		1FD6DB222B75420D00D72D13 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD6DB212B75420D00D72D13 /* HomePresenter.swift */; };
 		1FDF25112B63BA25003E4F61 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDF25102B63BA25003E4F61 /* VideoModel.swift */; };
 		1FDF25132B63CD6F003E4F61 /* ChannelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDF25122B63CD6F003E4F61 /* ChannelModel.swift */; };
 		1FDF25152B63D011003E4F61 /* PlaylistItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDF25142B63D011003E4F61 /* PlaylistItemsModel.swift */; };
@@ -36,9 +38,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F0794912B72B44F001E3877 /* HomeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProvider.swift; sourceTree = "<group>"; };
 		1F954E9B2B6BABE6002C7C92 /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
 		1F954E9E2B6BAE21002C7C92 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1FAAF6052B62D7A700A5D74C /* PlayListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListModel.swift; sourceTree = "<group>"; };
+		1FD6DB212B75420D00D72D13 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		1FDF25102B63BA25003E4F61 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		1FDF25122B63CD6F003E4F61 /* ChannelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelModel.swift; sourceTree = "<group>"; };
 		1FDF25142B63D011003E4F61 /* PlaylistItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistItemsModel.swift; sourceTree = "<group>"; };
@@ -77,6 +81,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F07948D2B72B308001E3877 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F0794902B72B43A001E3877 /* Provider */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1F07948E2B72B40F001E3877 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1FD6DB212B75420D00D72D13 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1F07948F2B72B41B001E3877 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1FDF25202B63D48E003E4F61 /* HomeViewController.swift */,
+				1FDF25212B63D48E003E4F61 /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1F0794902B72B43A001E3877 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				1F0794912B72B44F001E3877 /* HomeProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
 		1F954E9D2B6BAE04002C7C92 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,8 +145,9 @@
 		1FDF251B2B63D42A003E4F61 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				1FDF25202B63D48E003E4F61 /* HomeViewController.swift */,
-				1FDF25212B63D48E003E4F61 /* HomeViewController.xib */,
+				1F07948E2B72B40F001E3877 /* Presenter */,
+				1F07948F2B72B41B001E3877 /* View */,
+				1F07948D2B72B308001E3877 /* Model */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -278,6 +316,7 @@
 				1FF36F222B6024B0004A879A /* ViewController.swift in Sources */,
 				1FDFFE022B69724B0015FC47 /* NetworkError.swift in Sources */,
 				1FDF25132B63CD6F003E4F61 /* ChannelModel.swift in Sources */,
+				1FD6DB222B75420D00D72D13 /* HomePresenter.swift in Sources */,
 				1FDF25262B63D4A3003E4F61 /* VideosViewController.swift in Sources */,
 				1FAAF6062B62D7A700A5D74C /* PlayListModel.swift in Sources */,
 				1FDF252A2B63D4B6003E4F61 /* PlaylistsViewController.swift in Sources */,
@@ -286,6 +325,7 @@
 				1FDF25112B63BA25003E4F61 /* VideoModel.swift in Sources */,
 				1FDF25222B63D48E003E4F61 /* HomeViewController.swift in Sources */,
 				1FF36F202B6024B0004A879A /* SceneDelegate.swift in Sources */,
+				1F0794922B72B44F001E3877 /* HomeProvider.swift in Sources */,
 				1FDF251A2B63D2D4003E4F61 /* MainViewController.swift in Sources */,
 				1FDFFE002B6972280015FC47 /* ServiceLayer.swift in Sources */,
 				1FDF25322B63D4E1003E4F61 /* AboutViewController.swift in Sources */,

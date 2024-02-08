@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		1F0794922B72B44F001E3877 /* HomeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0794912B72B44F001E3877 /* HomeProvider.swift */; };
 		1F954E9C2B6BABE6002C7C92 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F954E9B2B6BABE6002C7C92 /* RequestModel.swift */; };
-		1F954E9F2B6BAE21002C7C92 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F954E9E2B6BAE21002C7C92 /* Constants.swift */; };
+		1F954E9F2B6BAE21002C7C92 /* Constants_modificar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F954E9E2B6BAE21002C7C92 /* Constants_modificar.swift */; };
 		1FAAF6062B62D7A700A5D74C /* PlayListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAF6052B62D7A700A5D74C /* PlayListModel.swift */; };
 		1FD6DB222B75420D00D72D13 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD6DB212B75420D00D72D13 /* HomePresenter.swift */; };
+		1FD6DB242B755A0000D72D13 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD6DB232B755A0000D72D13 /* Constants.swift */; };
 		1FDF25112B63BA25003E4F61 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDF25102B63BA25003E4F61 /* VideoModel.swift */; };
 		1FDF25132B63CD6F003E4F61 /* ChannelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDF25122B63CD6F003E4F61 /* ChannelModel.swift */; };
 		1FDF25152B63D011003E4F61 /* PlaylistItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDF25142B63D011003E4F61 /* PlaylistItemsModel.swift */; };
@@ -40,9 +41,10 @@
 /* Begin PBXFileReference section */
 		1F0794912B72B44F001E3877 /* HomeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProvider.swift; sourceTree = "<group>"; };
 		1F954E9B2B6BABE6002C7C92 /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
-		1F954E9E2B6BAE21002C7C92 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1F954E9E2B6BAE21002C7C92 /* Constants_modificar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants_modificar.swift; sourceTree = "<group>"; };
 		1FAAF6052B62D7A700A5D74C /* PlayListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListModel.swift; sourceTree = "<group>"; };
 		1FD6DB212B75420D00D72D13 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		1FD6DB232B755A0000D72D13 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1FDF25102B63BA25003E4F61 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		1FDF25122B63CD6F003E4F61 /* ChannelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelModel.swift; sourceTree = "<group>"; };
 		1FDF25142B63D011003E4F61 /* PlaylistItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistItemsModel.swift; sourceTree = "<group>"; };
@@ -117,7 +119,8 @@
 		1F954E9D2B6BAE04002C7C92 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				1F954E9E2B6BAE21002C7C92 /* Constants.swift */,
+				1F954E9E2B6BAE21002C7C92 /* Constants_modificar.swift */,
+				1FD6DB232B755A0000D72D13 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FD6DB242B755A0000D72D13 /* Constants.swift in Sources */,
 				1FF36F222B6024B0004A879A /* ViewController.swift in Sources */,
 				1FDFFE022B69724B0015FC47 /* NetworkError.swift in Sources */,
 				1FDF25132B63CD6F003E4F61 /* ChannelModel.swift in Sources */,
@@ -332,7 +336,7 @@
 				1FDF252E2B63D4CF003E4F61 /* ChannelsViewController.swift in Sources */,
 				1FDF25152B63D011003E4F61 /* PlaylistItemsModel.swift in Sources */,
 				1FDF25182B63D2AA003E4F61 /* RootPageViewController.swift in Sources */,
-				1F954E9F2B6BAE21002C7C92 /* Constants.swift in Sources */,
+				1F954E9F2B6BAE21002C7C92 /* Constants_modificar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

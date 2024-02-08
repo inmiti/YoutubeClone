@@ -26,7 +26,8 @@ DerivedData/
 *.hmap
 
 ## My proyect
-Utils/Constants.swift
+YoutubeClone/YoutubeClone/Utils/Constants.swift
+
 ## App packaging
 *.ipa
 *.dSYM.zip
